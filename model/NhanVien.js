@@ -30,7 +30,10 @@ class NhanVien {
                 luong = 0;
                 break;
         }
-        return luong;
+        return luong.toLocaleString("vi-VN", {
+            style: "currency",
+            currency: "VND",
+        });
     };
 
     xepLoaiNV = function () {

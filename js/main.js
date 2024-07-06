@@ -126,6 +126,7 @@ function renderEmployee(arr = arrNhanVien) {
         } = newEm;
         let tinhLuong = newEm.tinhLuong();
         let xepLoai = newEm.xepLoaiNV();
+
         content += `
         <tr>
             <td>${tknv}</td>
@@ -142,6 +143,12 @@ function renderEmployee(arr = arrNhanVien) {
     }
     document.getElementById("tableDanhSach").innerHTML = content;
 }
+
+// function formatDate(dateString) {
+//     if (!dateString) return "";
+//     let [year, month, day] = dateString.split("-");
+//     return `${day}/${month}/${year}`;
+// }
 
 //gọi nv truyền dữ liệu lên form
 function getInfoNhanVien(maNV) {
